@@ -1,0 +1,17 @@
+function manageGroceryCart() {
+
+let cart = [];
+cart.push("Apples")
+cart.push("Bananas")
+cart.push("Bread")
+cart.push("Milk")
+let removedItem = cart.pop()
+
+return{
+totalItems: cart.length,
+items: cart,
+removedItem: removedItem
+}
+}
+
+console.log(manageGroceryCart())
